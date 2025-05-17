@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Integral University | College Event Management</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg,#24c6dc,#5433ff 70%,#ff7e5f);
+      background-attachment: fixed;
+      font-family: 'Segoe UI',Arial,sans-serif;
+    }
+    .event-card {
+      border-radius: 1.5rem;
+      background: rgba(255,255,255,0.83);
+      box-shadow: 0 6px 32px 4px rgba(60,60,150,0.12);
+      padding: 2rem 2.5rem;
+    }
+    .navbar {
+      background:rgba(255,255,255,0.93)!important;
+      border-radius:1rem;
+      margin-top:1rem;
+    }
+    .brand-logo {
+      width:48px;height:48px;object-fit:cover;border-radius:10px;margin-right:1em;vertical-align:middle
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md shadow-sm px-3">
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+      <img src="assets/integral-university-logo.png" alt="Integral University Logo" class="brand-logo" style="width:48px;height:48px;object-fit:contain;border-radius:10px;margin-right:1em;">
+      Integral University
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link fw-semibold" href="student-login.html" id="studentLoginBtn">Student Login</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold" href="admin-login.html" id="adminLoginBtn">Admin Login</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container d-flex flex-column justify-content-center align-items-center vh-100">
+    <div class="event-card text-center mt-5">
+      <img src="https://same-assets.com/integral-uni-logo.png" alt="Integral University Logo" style="height:70px;width:70px;margin-bottom:0.7em;" onerror="this.style.display='none'">
+      <h1 class="fw-bold mb-3">College Event Management System</h1>
+      <p class="lead mb-4">Empowering students and staff to create, discover and manage campus life at Integral University.</p>
+      <div class="d-flex justify-content-center gap-3 mt-4">
+        <a href="student-login.html" class="btn btn-primary px-4 py-2" id="landingStudentLogin">Student Login</a>
+        <a href="admin-login.html" class="btn btn-success px-4 py-2" id="landingAdminLogin">Admin Login</a>
+      </div>
+    </div>
+  </div>
+  <div id="root"></div>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
